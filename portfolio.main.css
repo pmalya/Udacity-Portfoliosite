@@ -1,0 +1,197 @@
+.main-wrapper {
+  font-family: 'Cagliostro', sans-serif;
+}
+
+.nested-wrapper {
+  font-family: 'Cagliostro', sans-serif;
+}
+
+/**main grid areas**/
+
+.page-header {
+  grid-area: header;
+}
+
+.hero-pic {
+  grid-area: hero-pic;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: featured-work;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+/**nested grid areas**/
+
+}
+
+.card {
+  grid-area: card;
+}
+
+/**.featured-work-item2 {
+  grid-area: featured-work-item2;
+}
+
+.featured-work-item3 {
+  grid-area: featured-work-item3;
+}**/
+
+/**mobile layout**/
+
+.main-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  margin: 10px;
+  grid-template-areas: "header" "sidebar" "hero-pic" "featured-work" "footer"
+}
+
+.pull-left {
+  height: 50px;
+  width: 50px margin: auto;
+}
+
+/**header**/
+
+.page-header {
+  padding-bottom: 1.5em;
+  border-bottom-color: #a6a6a6;
+  margin-top: 0px;
+  border-bottom-width: thick;
+}
+
+.header-inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.h1.main-title {
+  font-weight: 300;
+  font-size: 1em;
+  margin: auto;
+  display: inline-block;
+  color: #212121;
+}
+
+/**sidebar**/
+
+.list-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  justify-content: stretch;
+  float: left;
+}
+
+.list-gourp-item {
+  display: inline;
+  padding: 8px;
+  background-color: #dddddd;
+}
+
+/**Main**/
+
+.card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+.caption {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+}
+
+/**.motto{
+	margin: auto;
+	font-size: 6em;
+	font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
+  color: #fff;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1);
+	display: flex;
+}**/
+
+/**Featured work**/
+
+.nested-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "featured-work-item" "featured-work-item" "featured-work-item"
+}
+
+.content {
+  float: left;
+  position: pull-left;
+  align-items: pull-left;
+}
+
+.card {
+  background-color: #dddddd;
+  text-align: center;
+  border-radius: 10%;
+  border-width: thick;
+}
+
+.card-img-top {
+  display: none;
+}
+
+.card-text {
+  display: none;
+}
+
+featured-work-item {
+  display: block;
+}
+
+/**footer**/
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  border-radius: 30%;
+  vertical-align: middle;
+  line-height: 48px;
+  font-size: 2em;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  height: 48px;
+  width: 48px;
+  border-radius: 30%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 48px;
+  font-size: 2em;
+}
