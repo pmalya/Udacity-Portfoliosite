@@ -1,0 +1,174 @@
+.main-wrapper {
+  font-family: 'Cagliostro', sans-serif;
+}
+
+/**main grid areas**/
+
+.page-header {
+  grid-area: header;
+}
+
+.hero-pic {
+  grid-area: hero-pic;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.content {
+  grid-area: featured-work;
+}
+
+.main-footer {
+  grid-area: footer;
+}
+
+}
+
+/**nested grid areas**/
+
+.card {
+  grid-area: card;
+}
+
+/**mobile layout**/
+
+.main-wrapper {
+  display: grid;
+  grid-gap: 20px;
+  margin: 10px;
+  grid-template-areas: "header" "sidebar" "hero-pic" "featured-work" "footer";
+  font-size: 20px;
+}
+
+.pull-left {
+  height: 50px;
+  width: 50px;
+  margin: auto;
+}
+
+/**header**/
+
+.page-header {
+  padding-bottom: 1.5em;
+  border-bottom-color: #a6a6a6;
+  margin-top: 0px;
+  border-bottom-width: thick;
+}
+
+.header-inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.h1.main-title {
+  font-weight: 300;
+  font-size: 1em;
+  margin: auto;
+  display: inline-block;
+  color: #212121;
+}
+
+/**sidebar**/
+
+.list-group {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+
+.list-group-item1:hover, .list-group-item2:hover, .list-group-item3:hover {
+  opacity: 0.7;
+}
+
+.li {
+  justify-content: space-between;
+  float: left;
+}
+
+.list-group-item1, .list-group-item2, .list-group-item3 {
+  display: inline;
+  padding: 8px;
+  background-color: #dddddd;
+  border-radius: 10%;
+}
+
+/**Main**/
+
+.card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.thumbnail {
+  position: relative;
+}
+
+/**Featured work**/
+
+.nested-wrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: "card" "card" "card"
+}
+
+.content {
+  float: left;
+}
+
+.card {
+  background-color: #dddddd;
+  text-align: center;
+  border-radius: 10%;
+  border-width: thick;
+}
+
+.card-img-top {
+  display: none;
+}
+
+.card-text {
+  display: none;
+}
+
+.card:hover {
+  opacity: 0.7;
+}
+
+/**footer**/
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  height: 48px;
+  width: 48px;
+  text-align: center;
+  border-radius: 30%;
+  vertical-align: middle;
+  line-height: 48px;
+  font-size: 2em;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  height: 48px;
+  width: 48px;
+  border-radius: 30%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 48px;
+  font-size: 2em;
+}

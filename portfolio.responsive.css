@@ -1,0 +1,179 @@
+/** -two columns template
+    - featured work area only pic and title**/
+
+@media (min-width: 600px) {
+  .main-wrapper {
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "header  header" "sidebar hero-pic" "sidebar featured-work" "footer footer";
+    font-size: 15px;
+  }
+  .nested-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-template-areas: "card card card";
+  }
+  /**siedbar**/
+  .list-group-item1 {
+    padding: 8px;
+    background-color: #dddddd;
+    text-align: left;
+    position: fixed;
+    margin-top: 5%;
+    left: 10%;
+    font-size: 20px;
+  }
+  .list-group-item2 {
+    padding: 8px;
+    background-color: #dddddd;
+    text-align: left;
+    position: fixed;
+    margin-top: 15%;
+    left: 10%;
+    font-size: 20px;
+  }
+  .list-group-item3 {
+    padding: 8px;
+    background-color: #dddddd;
+    text-align: left;
+    position: fixed;
+    margin-top: 25%;
+    left: 10%;
+    font-size: 20px;
+  }
+  /**Featured work**/
+  .card {
+    border: 1px solid silver;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card-body {
+    padding: 2px 16px;
+    border: 0.25em solid #a6a6a6;
+    border-radius: 10%;
+    padding: 0 10px;
+    text-align: justify;
+    margin: 10px 0;
+    background: rgba(200, 54, 54, 0.2);
+  }
+  .card-img-top {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 15vw;
+    border: 0.25em solid #a6a6a6;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+}
+
+/** - sidebar elements need to have vertical position
+    - featured work elements card format **/
+
+@media (min-width: 870px) {
+  .main-wrapper {
+    grid-template-columns: 25% 75%;
+    grid-template-areas: "header  header" "sidebar hero-pic" "sidebar featured-work" "footer footer";
+    font-size: large;
+  }
+  .nested-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+  .card {
+    border: 1px solid silver;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+  }
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  .card-body {
+    padding: 2px 16px;
+    border: 0.25em solid #a6a6a6;
+    border-radius: 10%;
+    padding: 0 10px;
+    text-align: justify;
+    margin: 10px 0;
+    background: rgba(200, 54, 54, 0.2);
+  }
+  .card-img-top {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    height: 15vw;
+    border: 0.25em solid #a6a6a6;
+    border-radius: 10%;
+    object-fit: cover;
+  }
+  .card-text {
+    display: flex;
+    text-align: center;
+  }
+  /**sidebar**/
+  .list-group-item1 {
+    padding: 8px;
+    background-color: #dddddd;
+    text-align: left;
+    position: fixed;
+    margin-top: 5%;
+    left: 5%;
+  }
+  .list-group-item2 {
+    padding: 8px;
+    background-color: #dddddd;
+    text-align: left;
+    position: fixed;
+    margin-top: 15%;
+    left: 5%;
+  }
+  .list-group-item3 {
+    padding: 8px;
+    background-color: #dddddd;
+    text-align: left;
+    position: fixed;
+    margin-top: 25%;
+    left: 5%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .main-wrapper {
+    max-width: 1100px;
+    margin: auto;
+    font-size: large;
+  }
+  /**sidebar**/
+  .list-group-item1 {
+    padding: 8px;
+    background-color: #dddddd;
+    text-align: left;
+    position: fixed;
+    margin-top: 5%;
+    left: auto;
+  }
+  .list-group-item2 {
+    padding: 8px;
+    background-color: #dddddd;
+    text-align: left;
+    position: fixed;
+    margin-top: 15%;
+    left: auto;
+  }
+  .list-group-item3 {
+    padding: 8px;
+    background-color: #dddddd;
+    text-align: left;
+    position: fixed;
+    margin-top: 25%;
+    left: auto;
+  }
+}
